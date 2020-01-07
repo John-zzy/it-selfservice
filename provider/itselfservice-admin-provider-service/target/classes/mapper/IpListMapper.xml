@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnec5.it.selfservice.provider.mapper.IpListMapper">
+  <resultMap id="BaseResultMap" type="com.cnec5.it.selfservice.provider.domain.IpList">
+    <!--@mbg.generated generated on Thu Dec 26 10:50:23 CST 2019.-->
+    <!--@Table ip_list-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="portid" jdbcType="VARCHAR" property="portid" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="floor_num" jdbcType="VARCHAR" property="floorNum" />
+    <result column="room_num" jdbcType="VARCHAR" property="roomNum" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="ipv4" jdbcType="VARCHAR" property="ipv4" />
+    <result column="ipv6" jdbcType="VARCHAR" property="ipv6" />
+    <result column="mac" jdbcType="VARCHAR" property="mac" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="swi_vlan" jdbcType="VARCHAR" property="swiVlan" />
+    <result column="swi_accesslist" jdbcType="VARCHAR" property="swiAccesslist" />
+    <result column="swi_portnum" jdbcType="INTEGER" property="swiPortnum" />
+    <result column="swi_address" jdbcType="INTEGER" property="swiAddress" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="created" jdbcType="TIMESTAMP" property="created" />
+    <result column="updated" jdbcType="TIMESTAMP" property="updated" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Dec 26 10:50:23 CST 2019.-->
+    id, portid, `location`, floor_num, room_num, username, ipv4, ipv6, mac, `status`, 
+    swi_vlan, swi_accesslist, swi_portnum, swi_address, `comment`, created, updated
+  </sql>
+</mapper>

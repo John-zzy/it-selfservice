@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnec5.it.selfservice.provider.mapper.SwiListMapper">
+  <resultMap id="BaseResultMap" type="com.cnec5.it.selfservice.provider.domain.SwiList">
+    <!--@mbg.generated generated on Thu Dec 26 10:50:23 CST 2019.-->
+    <!--@Table swi_list-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="swi_location" jdbcType="VARCHAR" property="swiLocation" />
+    <result column="swi_ipv4" jdbcType="VARCHAR" property="swiIpv4" />
+    <result column="swi_name" jdbcType="VARCHAR" property="swiName" />
+    <result column="swi_comment" jdbcType="VARCHAR" property="swiComment" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Dec 26 10:50:23 CST 2019.-->
+    id, parent_id, swi_location, swi_ipv4, swi_name, swi_comment
+  </sql>
+</mapper>
